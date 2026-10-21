@@ -13,10 +13,11 @@
         body { background: var(--light); color: var(--dark); }
         header { background: #fff; border-top: 5px solid var(--rr-green); box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; flex-wrap: wrap; }
         .logo { font-size: 28px; font-weight: 800; color: var(--dark); text-decoration: none; letter-spacing: -1px; }
         .logo span { color: var(--rr-green); }
-        .categories a { text-decoration: none; color: var(--dark); margin-left: 15px; font-weight: 600; font-size: 14px; text-transform: uppercase; }
+        .categories a { text-decoration: none; color: var(--dark); margin-left: 15px; font-weight: 600; font-size: 14px; text-transform: uppercase; cursor: pointer; }
+        .categories a:hover, .categories a.active { color: var(--rr-green); border-bottom: 2px solid var(--rr-yellow); }
         .hero { padding: 40px 0; border-bottom: 2px solid #ddd; margin-bottom: 20px; }
         .hero h1 { border-left: 5px solid var(--rr-green); padding-left: 15px; }
         .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; padding: 40px 0; }
@@ -28,7 +29,7 @@
         .card h3 { font-size: 20px; margin-bottom: 10px; line-height: 1.3; }
         .card p { color: var(--gray); font-size: 14px; line-height: 1.5; }
         .date { font-size: 12px; color: #999; margin-top: 10px; display: block; }
-        @media (max-width: 768px) { .categories { display: none; } }
+        @media (max-width: 768px) { .categories { width: 100%; margin-top: 10px; overflow-x: auto; white-space: nowrap; } .categories a { margin-left: 0; margin-right: 10px; } }
     </style>
 </head>
 <body>
@@ -36,12 +37,15 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo">BREAK<span>NEWS</span> RR</a>
-                <div class="categories">
-                    <a href="#seguranca">Segurança</a>
-                    <a href="#educacao">Educação</a>
-                    <a href="#agro">Agro</a>
-                    <a href="#saude">Saúde</a>
-                    <a href="#tech">Tech</a>
+                <div class="categories" id="menu-categorias">
+                    <a data-cat="Geral" class="active">Geral</a>
+                    <a data-cat="Segurança">Segurança</a>
+                    <a data-cat="Educação">Educação</a>
+                    <a data-cat="Agro">Agro</a>
+                    <a data-cat="Saúde">Saúde</a>
+                    <a data-cat="Tech">Tech</a>
+                    <a data-cat="Política">Política</a>
+                    <a data-cat="Economia">Economia</a>
                 </div>
             </nav>
         </div>
@@ -56,25 +60,52 @@
         </div>
     </footer>
     <script>
+        let todasAsNoticias = [];
+
+        function renderizar(categoria = 'Geral') {
+            const heroSection = document.getElementById('hero-section');
+            const newsGrid = document.getElementById('news-grid');
+            heroSection.innerHTML = '';
+            newsGrid.innerHTML = '';
+
+            let lista = [];
+            if (categoria === 'Geral') {
+                lista = [...todasAsNoticias].sort((a, b) => new Date(b.data) - new Date(a.data));
+            } else {
+                lista = todasAsNoticias.filter(n => n.categoria === categoria).sort((a, b) => new Date(b.data) - new Date(a.data));
+            }
+
+            if (lista.length > 0) {
+                const destaque = lista[0];
+                heroSection.innerHTML = `<div><span class="badge">${destaque.categoria}</span><h1 style="font-size: 32px;">${destaque.titulo}</h1><p style="font-size: 18px; color: var(--gray); margin-top: 10px;">${destaque.resumo}</p><span class="date">${new Date(destaque.data).toLocaleString('pt-BR', { timeZone: 'America/Manaus' })}</span></div>`;
+                
+                lista.slice(1).forEach(noticia => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `<img src="${noticia.imagem || 'https://via.placeholder.com/400x200'}" alt="${noticia.titulo}"><div class="card-content"><span class="badge">${noticia.categoria}</span><h3>${noticia.titulo}</h3><p>${noticia.resumo}</p><span class="date">${new Date(noticia.data).toLocaleString('pt-BR', { timeZone: 'America/Manaus' })}</span></div>`;
+                    newsGrid.appendChild(card);
+                });
+            } else {
+                heroSection.innerHTML = `<h1>Nenhuma notícia encontrada</h1><p>Não há notícias na categoria ${categoria} no momento.</p>`;
+            }
+        }
+
         fetch('noticias.json')
             .then(response => response.json())
             .then(data => {
-                const heroSection = document.getElementById('hero-section');
-                const newsGrid = document.getElementById('news-grid');
-                if (data.length > 0) {
-                    data.sort((a, b) => new Date(b.data) - new Date(a.data));
-                    const destaque = data[0];
-                    heroSection.innerHTML = `<div><span class="badge">${destaque.categoria}</span><h1 style="font-size: 32px;">${destaque.titulo}</h1><p style="font-size: 18px; color: var(--gray); margin-top: 10px;">${destaque.resumo}</p><span class="date">${new Date(destaque.data).toLocaleString('pt-BR', { timeZone: 'America/Manaus' })}</span></div>`;
-                    data.slice(1).forEach(noticia => {
-                        const card = document.createElement('div');
-                        card.className = 'card';
-                        card.innerHTML = `<img src="${noticia.imagem || 'https://via.placeholder.com/400x200'}" alt="${noticia.titulo}"><div class="card-content"><span class="badge">${noticia.categoria}</span><h3>${noticia.titulo}</h3><p>${noticia.resumo}</p><span class="date">${new Date(noticia.data).toLocaleString('pt-BR', { timeZone: 'America/Manaus' })}</span></div>`;
-                        newsGrid.appendChild(card);
-                    });
-                } else {
-                    heroSection.innerHTML = `<h1>Bem-vindo ao BREAK NEWS RR</h1><p>Aguarde, nossas notícias estão sendo carregadas...</p>`;
-                }
-            }).catch(error => console.error('Erro ao carregar notícias:', error));
+                todasAsNoticias = data;
+                renderizar('Geral');
+            });
+
+        document.getElementById('menu-categorias').addEventListener('click', function(e) {
+            if(e.target.tagName === 'A') {
+                e.preventDefault();
+                document.querySelectorAll('.categories a').forEach(a => a.classList.remove('active'));
+                e.target.classList.add('active');
+                const cat = e.target.getAttribute('data-cat');
+                renderizar(cat);
+            }
+        });
     </script>
 </body>
 </html>
