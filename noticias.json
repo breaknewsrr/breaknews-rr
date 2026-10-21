@@ -1,1 +1,26 @@
-[ ]
+[
+  {
+    "titulo": "Justiça Eleitoral alerta eleitores de Roraima para conferirem local de votação antes do 2º turno",
+    "categoria": "Política",
+    "resumo": "TREs orientam que seções eleitorais podem sofrer mudanças de última hora por questões de segurança ou clima.",
+    "data": "2024-05-21T10:30:00",
+    "imagem": "https://images.unsplash.com/photo-1607121475448-5e354c2c3d04?q=80&w=1200",
+    "conteudo": "A Justiça Eleitoral está recomendando que os eleitores de Boa Vista e de todo o estado de Roraima confirmem seus locais de votação antes de saírem de casa para o segundo turno das eleições. O alerta ocorre porque seções eleitorais podem ser alteradas até o dia da votação. A consulta pode ser feita através do aplicativo e-Título ou pelos sites oficiais do TSE e TRE. A orientação também pede cautela com links falsos compartilhados em grupos de WhatsApp."
+  },
+  {
+    "titulo": "Câmara Municipal de Boa Vista aprova 110 novas vagas para professores e regra sobre merenda",
+    "categoria": "Educação",
+    "resumo": "Projeto que restringe alimentos ultraprocessados nas escolas também foi aprovado e agora segue para sanção do prefeito.",
+    "data": "2024-05-21T09:15:00",
+    "imagem": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200",
+    "conteudo": "O plenário da Câmara Municipal de Boa Vista aprovou nesta semana a criação de 110 novas vagas de professores para a rede municipal de ensino. Além disso, os vereadores aprovaram um projeto de lei que proíbe o fornecimento de alimentos ultraprocessados nas escolas da cidade. Agora, as propostas seguem para a sanção do prefeito Marcelo Zeitoune."
+  },
+  {
+    "titulo": "Embaixadora defende voos diretos entre Brasil e Guiana para impulsionar economia de Roraima",
+    "categoria": "Agro",
+    "resumo": "Maria Cristina Martins afirma que conexões aéreas podem fortalecer o turismo e os negócios na fronteira norte do Brasil.",
+    "data": "2024-05-20T16:45:00",
+    "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200",
+    "conteudo": "A embaixadora do Brasil na Guiana, Maria Cristina de Castro Martins, destacou a importância de estabelecer voos diretos entre os dois países. Segundo ela, a melhoria da conexão aérea na fronteira norte pode impulsionar significativamente o turismo e a integração econômica regional. A iniciativa é vista com bons olhos pelo setor produtivo de Roraima."
+  }
+] 
