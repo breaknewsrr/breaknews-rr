@@ -1,0 +1,29 @@
+name: Robô de Notícias RR
+on:
+  schedule:
+    - cron: '0 8,12,18 * * *' # Roda às 08:00, 12:00 e 18:00
+  workflow_dispatch: # Permite você apertar o botão de rodar manualmente
+
+jobs:
+  fetch-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v3
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Instalar ferramentas
+        run: pip install feedparser requests
+      - name: Rodar o Robô
+        env:
+          GROQ_KEY: ${{ secrets.GROQ_KEY }}
+        run: python auto_news.py
+      - name: Publicar no site
+        run: |
+          git config --global user.name "Robo-BreakNews"
+          git config --global user.email "bot@github.com"
+          git add noticias.json
+          git commit -m "🤖 Notícia automática atualizada" || echo "Nenhuma mudança"
+          git push
