@@ -1,34 +1,42 @@
 [
   {
-    "titulo": "teste de alerta eleitores de Roraima para conferirem local de votação antes do 2º turno",
+    "titulo": "Centro de acolhimento de Boa Vista promove dia lúdico para cerca de 100 crianças com TEA",
+    "categoria": "Saúde",
+    "resumo": "Teamarr, ligado à ALERR, realizou oficinas para estimular desenvolvimento cognitivo e motor de crianças e adolescentes no Dia das Crianças.",
+    "data": "2024-05-21T15:30:00",
+    "imagem": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1200",
+    "conteudo": "O Centro de Acolhimento Autista (Teamarr), mantido pela Assembleia Legislativa de Roraima (ALERR), promoveu uma programação especial para o Dia das Crianças, atendendo cerca de 100 crianças e adolescentes. O evento, realizado nas duas unidades do centro em Boa Vista, focou no desenvolvimento cognitivo, motor e social por meio de brincadeiras e oficinas terapêuticas. A diretora do centro, Ana Paula Aporta, destacou a importância de unir diversão e aprendizagem. Já o presidente da ALERR, deputado Jorge Everton, afirmou que o objetivo para o próximo ano é expandir os atendimentos a regiões mais distantes do estado."
+  },
+  {
+    "titulo": "Fobia social: como identificar os sintomas e onde buscar ajuda em Roraima",
+    "categoria": "Saúde",
+    "resumo": "Casos de transtorno de ansiedade social ganham destaque após viralização de vídeo e especialistas explicam os sinais de alerta.",
+    "data": "2024-05-21T14:00:00",
+    "imagem": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1200",
+    "conteudo": "A exposição de um vídeo por um influenciador digital reacendeu o debate sobre a fobia social, também conhecida como transtorno de ansiedade social. A condição pode comprometer severamente a qualidade de vida, gerando medo intenso de julgamentos em situações sociais. Especialistas alertam que sintomas como suor excessivo, tremores e dificuldade de falar em público são sinais de alerta. O tratamento envolve terapia psicológica e, em alguns casos, medicação, ajudando o paciente a recuperar a confiança e a interação social."
+  },
+  {
+    "titulo": "Outubro Rosa: 90% dos casos de câncer de mama não estão ligados à genética, alertam médicos",
+    "categoria": "Saúde",
+    "resumo": "Especialistas reforçam que a ausência de histórico familiar não elimina o risco e destacam a importância da mamografia preventiva.",
+    "data": "2024-05-21T11:30:00",
+    "imagem": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200",
+    "conteudo": "No mês de conscientização do Outubro Rosa, médicos reforçam um dado essencial: cerca de 90% dos diagnósticos de câncer de mama não possuem relação com herança genética. Muitas mulheres acreditam que, por não terem casos na família, estão livres da doença, o que pode atrasar o diagnóstico. A orientação é manter a atenção a qualquer alteração nas mamas e realizar a mamografia periodicamente. A detecção precoce continua sendo a principal aliada no tratamento e cura da doença."
+  },
+  {
+    "titulo": "Ministério Público de Roraima recomenda anulação de gratificações da Secretaria de Saúde",
     "categoria": "Política",
-    "resumo": "TREs orientam que seções eleitorais podem sofrer mudanças de última hora por questões de segurança ou clima.",
-    "data": "2024-05-21T10:30:00",
-    "imagem": "https://images.unsplash.com/photo-1607121475448-5e354c2c3d04?q=80&w=1200",
-    "conteudo": "A Justiça Eleitoral está recomendando que os eleitores de Boa Vista e de todo o estado de Roraima confirmem seus locais de votação antes de saírem de casa para o segundo turno das eleições. O alerta ocorre porque seções eleitorais podem ser alteradas até o dia da votação. A consulta pode ser feita através do aplicativo e-Título ou pelos sites oficiais do TSE e TRE. A orientação também pede cautela com links falsos compartilhados em grupos de WhatsApp."
+    "resumo": "Promotoria deu um prazo de 30 dias para o governo de RR tomar providências, citando risco de improbidade administrativa.",
+    "data": "2024-05-21T09:00:00",
+    "imagem": "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?q=80&w=1200",
+    "conteudo": "O Ministério Público de Roraima (MPRR) emitiu uma recomendação para anular gratificações criadas por portarias dentro da Secretaria de Saúde do estado. A Promotoria de Justiça estipulou um prazo de 30 dias para que o governo estadual informe as providências que serão tomadas. Segundo o órgão, a manutenção desses pagamentos sem a devida legalização pode configurar atos de improbidade administrativa. A medida visa garantir a transparência e a legalidade na gestão dos recursos públicos no setor da saúde de Roraima."
   },
   {
-    "titulo": "Câmara Municipal de Boa Vista aprova 110 novas vagas para professores e regra sobre merenda",
-    "categoria": "Educação",
-    "resumo": "Projeto que restringe alimentos ultraprocessados nas escolas também foi aprovado e agora segue para sanção do prefeito.",
-    "data": "2024-05-21T09:15:00",
-    "imagem": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200",
-    "conteudo": "O plenário da Câmara Municipal de Boa Vista aprovou nesta semana a criação de 110 novas vagas de professores para a rede municipal de ensino. Além disso, os vereadores aprovaram um projeto de lei que proíbe o fornecimento de alimentos ultraprocessados nas escolas da cidade. Agora, as propostas seguem para a sanção do prefeito Marcelo Zeitoune."
-  },
-  {
-    "titulo": "Embaixadora defende voos diretos entre Brasil e Guiana para impulsionar economia de Roraima",
-    "categoria": "Economia",
-    "resumo": "Maria Cristina Martins afirma que conexões aéreas podem fortalecer o turismo e os negócios na fronteira norte do Brasil.",
-    "data": "2024-05-20T16:45:00",
-    "imagem": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200",
-    "conteudo": "A embaixadora do Brasil na Guiana, Maria Cristina de Castro Martins, destacou a importância de estabelecer voos diretos entre os dois países. Segundo ela, a melhoria da conexão aérea na fronteira norte pode impulsionar significativamente o turismo e a integração econômica regional. A iniciativa é vista com bons olhos pelo setor produtivo de Roraima."
-  },
-  {
-    "titulo": "Eleitores não podem ser presos a partir desta terça-feira no Brasil; entenda a regra",
-    "categoria": "Segurança",
-    "resumo": "Regra do Código Eleitoral busca garantir o direito ao voto e vale para o período que antecede as eleições.",
-    "data": "2024-05-20T08:00:00",
-    "imagem": "https://images.unsplash.com/photo-1581683363996-cd78b4c2f7b9?q=80&w=1200",
-    "conteudo": "A partir desta terça-feira, os eleitores em todo o Brasil, incluindo Roraima, não podem ser presos, conforme regra prevista no Código Eleitoral. A medida busca garantir o direito ao voto no segundo turno. No entanto, existem exceções, como em casos de prisões em flagrante, crimes inafiançáveis ou desrespeito a salvo-conduto."
+    "titulo": "Levantamento aponta que 73% dos pacientes com doenças de pele recebem diagnóstico incorreto no Brasil",
+    "categoria": "Saúde",
+    "resumo": "Pesquisa nacional revela que mais da metade dos pacientes levam anos para obter o diagnóstico definitivo e enfrentar dificuldades no acesso a tratamentos.",
+    "data": "2024-05-20T16:00:00",
+    "imagem": "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1200",
+    "conteudo": "Um levantamento recente sobre doenças crônicas de pele no Brasil revelou um cenário preocupante: 73% dos pacientes relatam ter recebido um diagnóstico incorreto durante o tratamento. A pesquisa aponta que 40% dos participantes levaram mais de cinco anos para obter um diagnóstico definitivo. Além disso, 63% afirmaram enfrentar grandes barreiras para acessar os medicamentos e tratamentos adequados pelo sistema público de saúde. Os dados evidenciam a necessidade de melhorias no suporte a pacientes que lidam com condições dermatológicas crônicas."
   }
 ]
